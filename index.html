@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Enviar Email con HTML</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Enviar Email en HTML</h1>
+        <form id="emailForm" action="https://formsubmit.co/el/peyepe" method="POST">
+            <textarea name="message" id="htmlInput" placeholder="Escribe tu HTML aquí..." required></textarea>
+            <input type="email" name="recipient" id="recipient" placeholder="Correo del destinatario" required />
+            <input type="text" name="subject" id="subject" placeholder="Asunto" required />
+            <button type="submit">Enviar</button>
+        </form>
+        <h2>Previsualización:</h2>
+        <div id="preview" class="preview"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
